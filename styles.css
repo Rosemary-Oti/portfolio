@@ -114,6 +114,7 @@ a{
     .react-div{
         width: 14px;
         height: 14px;
+        background: transparent;
        
     }
 
