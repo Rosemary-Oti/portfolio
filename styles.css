@@ -1,13 +1,14 @@
 header{
     
-    background-color: rgb(94, 94, 194);
-     height: 50px;
+    background-color: rgb(138, 138, 211);
+    height: 50px;
     width: auto;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 50px;
     
 }
+
 
 
 .lists{
@@ -52,6 +53,7 @@ header{
     height:auto;
     width: auto;
     background-color: rgb(232, 218, 218);
+    border: red;
     /* background-color: rgb(165, 165, 251); */
     
 }
@@ -62,15 +64,16 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 5px;
+    font: 20px sans-serif;
     /* border: solid black; */
    
 } 
 
 .about-div{
-    width: 300px;
+    width: 450px;
 }
  .work-div{
-    width: 350px;
+    width: 450px;
     padding-left: 18px;
     
 }
@@ -93,6 +96,13 @@ a{
     margin-top: 12px;
 }
 
+.divline{
+    height: 10px;
+    background-color: rgb(185, 172, 172); /* Black line */
+    margin-top: 60px;
+    border-radius: 50px;
+    margin:2rem 6rem;
+}
 
 .hero2{
     display: flex;
@@ -102,6 +112,7 @@ a{
     padding-right: 10px;
     gap: 10px;
     margin-top: 15px;
+    font: 20px sans-serif;
     /* border: solid black; */
 }
 
@@ -128,15 +139,15 @@ a{
 
     .footer-div{
         display:flex; 
-        background-color: rgb(94, 94, 194);
+        background-color: rgb(138, 138, 211);
         /* flex-direction: column; */
         align-items: center;
         justify-content: center;
         /* border: solid orangered; */
         height: 100px;
-        width: 700px;
+        width: auto;
         border-radius: 50px;
-        margin-left: 5rem;
+        margin: 0 5rem;
         gap: 8rem;
         
         
@@ -160,9 +171,9 @@ a{
 
     .copyline{
         width: 100%;
-    height: 2px;
-    background-color: #000; /* Black line */
-    margin-top: 60px;
+        height: 2px;
+        background-color: #000; /* Black line */
+        margin-top: 60px;
     }
 
     .email, .twiter, .github, .whatsapp {
@@ -180,7 +191,7 @@ a{
     }
 
     .hero3{
-        width: 800px;
+        width: auto;
         /* border: solid green;  */
         display: flex;
         overflow: hidden;
@@ -208,5 +219,14 @@ a{
         }
         100%{
             transform: translateX(-100%);
+        }
+    }
+
+
+    /* responsiveness */
+    @media only screen and (max-width: 768px) {
+        .main-div{
+            width: 80%;
+            background-color: red;
         }
     }
