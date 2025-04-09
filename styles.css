@@ -1,186 +1,109 @@
-header{
-    
-    background-color: rgb(138, 138, 211);
-    height: 50px;
-    width: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 50px;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.main-div{
+    width: 100%;
+    background-color: rgb(232, 218, 218);
+   
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(138, 138, 211);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    padding: 0 5em;
+    border-radius: 50px;
+    border: solid black;
+}
 
+ ul li{
+    list-style: none;
+ }
+
+ ul li a{
+    color: #000;
+    text-decoration: none;
+ }
 
 .lists{
     display: flex;
-    align-items: center;
-    justify-content:end;
+    justify-content: end;
     gap: 35px;
-    
 }
  .logo {
-    width: 50px;
-    height: 20px;
-    position: absolute;
-    object-fit: cover; 
-    margin-top: 10px;
-    margin-left: 5px;
-    border-radius: 50%;
+    width: 80px;
     
  }
 
- .port-div {
-    width: 100px;
-    height: 100px;
-    border-radius: 40%;
-   margin-top: 10px;
-   margin-bottom: -20px;
-   
- } 
- .img-div{
-    width:auto;
-    align-content: center;
-    gap: 20px;
-    padding-left: 10px;
-    /* border: solid yellow; */
-
- }
- .main-port{
-    width: min-content;
-    
- }
-.main-div{
-    height:auto;
-    width: auto;
-    background-color: rgb(232, 218, 218);
-    border: red;
-    /* background-color: rgb(165, 165, 251); */
+ .contact{
+    cursor: pointer;
     
 }
-.hero1{
+
+ /* Hero1 section strts I STARTED HERE */
+ .hero1{
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+    gap: 15px;
+    margin-top: 10px;
     font: 20px sans-serif;
-    /* border: solid black; */
-   
 } 
 
-.about-div{
-    width: 450px;
-}
- .work-div{
-    width: 450px;
-    padding-left: 18px;
-    
+
+/* LEFT SIDE HERO1 */
+.img-div{
+    margin-top: 15px;
+ }
+
+
+ .port-div {
+    width: 200PX;
+    border-radius: 20%;
+    padding-left: 1.5rem;
+   
+ } 
+ 
+
+
+ /* RIGHT SIDE HERO1 */
+ .project-div{
+    box-shadow: 0 5px 5px 0;
+    width: 60%;
+    padding: 0 0 15px 15px;
+ }
+
+ .react-div{
+    width: 14px;
 }
 
 .pro{
-    width: 350px;
-    /* border: solid yellow; */
+     margin-top: 10px; 
     }
-
-a{
-    text-decoration: none;
-    color: blue;
-}
-
-.cert-div {
-    padding-top: 2rem;
-}
-
-.cert1, .cert2, .cert3, .cert4 {
-    margin-top: 12px;
-}
-
-.divline{
-    height: 10px;
-    background-color: rgb(185, 172, 172); /* Black line */
-    margin-top: 60px;
-    border-radius: 50px;
-    margin:2rem 6rem;
-}
-
-.hero2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 10px;
-    margin-top: 15px;
-    font: 20px sans-serif;
-    /* border: solid black; */
-}
 
     .resida-div{
         display: flex;
         align-items: center;
-        gap:10px;
+        gap:10px;   
     }
 
-    .react-div{
-        width: 14px;
-        height: 14px;
-        background: transparent;
-       
-    }
-
-    .auth-div, .landing-div{
+  .auth-div, .landing-div{
         display: flex;
         align-items: center;
+        margin-top: 10px;
         gap: 7px;
-
-
-    }
-
-    .footer-div{
-        display:flex; 
-        background-color: rgb(138, 138, 211);
-        /* flex-direction: column; */
-        align-items: center;
-        justify-content: center;
-        /* border: solid orangered; */
-        height: 100px;
-        width: auto;
-        border-radius: 50px;
-        margin: 0 5rem;
-        gap: 8rem;
-        
-        
-    }
-    .contact{
-        color: blue;
-        cursor: pointer;
-        border: none;
-        border-radius: 10%;
-        
-    }
-    .contact:hover{
-        color: white;
-    }
-
-     .footer-content{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    } 
-
-    .copyline{
-        width: 100%;
-        height: 2px;
-        background-color: #000; /* Black line */
-        margin-top: 60px;
-    }
-
-    .email, .twiter, .github, .whatsapp {
-        width: 20px;
-        height: 22px;
-        border-radius: 5%;
-        cursor: pointer;
     }
 
     .landing, .auth, .resida{
@@ -190,43 +113,289 @@ a{
         
     }
 
-    .hero3{
-        width: auto;
-        /* border: solid green;  */
+    .cert-div {
+        padding-top: 2rem;
+    }
+
+    .cert-div div a{
+        text-decoration: none;
+        color: blue;
+    }
+    
+    .cert1, .cert2, .cert3, .cert4 {
+        margin-top: 12px;
+    }
+ /* Hero1 section ends */
+
+ 
+ /* Division line */
+
+ .divline{
+    height: 10px;
+    background-color: rgb(185, 172, 172);
+    margin-top: 60px;
+    border-radius: 50px;
+    margin:2rem 6rem;
+}
+
+/* Hero2 starts here */
+
+.hero2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5em;
+    gap: 10px;
+    margin-top: 15px;
+    font: 20px sans-serif;
+}
+
+.sub-div{
+    object-fit: cover;
+    width: 100%;
+}
+
+.subHeroPhoto{
+    width: 80%;
+}
+.work-div{
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 5px 5px 0;
+    padding:0 0 15px 15px;
+}
+
+.work-div h3{
+    font-size: 2em;
+}
+
+.work1{
+    padding-top: 15px;
+}
+/* Hero2 ends here */
+
+
+/* Hero3 starts here */
+
+.hero3{
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7{
+  height: 90px;
+    width: 110px;
+    animation: slide 5s linear infinite;
+    border-radius: 5px;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/* Hero3 ends here */
+
+
+/* footer starts here */
+.footer-div{
+    display:flex; 
+    background-color: rgb(138, 138, 211);
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding-bottom: 1em;
+    border-radius: 50px;
+    border: solid #000;
+}
+
+.footer-content{
         display: flex;
-        overflow: hidden;
-        position: relative;
-        white-space: nowrap;
+        align-items: center;
+        gap: 10px;
+} 
+
+.email, .twiter, .github, .whatsapp {
+    width: 20px;
+    height: 22px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.copyline{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 60px;
+}
+
+/* footer ends here */
+
+
+/* mobile and tablet view */
+.menu-icon{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
+}
+
+
+/* Reponsive design */
+
+     @media (max-width: 768px) {
+    .lists{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding: 0 60px;
+       }
+
+       .menu-icon{
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .nav{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: blue;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .lists{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 60px;
+    
+}
+
+.lists li a{
+    color: white;
+}
+
+.lists li a:hover{
+    color: yellow;
+}
+
+.contact{
+    color: white;
+}
+    .menu-icon{
+        display: block;
+    }
+
+   .nav.show{
+    transform: translateX(0);
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .nav.show + .menu-icon .hamburger{
+        display: none;
+    }
+
+    .nav.show + .menu-icon .close{
+        display: block;
+        
+    }
+
+    header{
+        border-radius: 0;
+    }
+
+    /* hero1 starts here */
+    .hero1{
+        flex-direction: column;
+        padding: 0 5em;
+        
+    }
+
+    .img-div{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+     }
+
+     .about-div h2, p{
+        text-align: center;
+     }
+    
+     .main-port{
+        width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:10px;
-        padding-right: 10px;
-        margin-left: 20px;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+     }
+    .project-div{
+        width: 100%;
     }
 
-    .p1, .p2, .p3, .p4, .p5, .p6, .p7{
-      height: 90px;
-        width: 105px;
-        animation: slide 5s linear infinite;
+    .pro{
+        width: 100%;
     }
 
-    @keyframes slide {
-        0%{
-            transform: translateX(100%);
-        }
-        100%{
-            transform: translateX(-100%);
-        }
-    }
+    /* hero1 ends here */
 
+    /* Hero2 starts here */
 
-    /* responsiveness */
-    @media only screen and (max-width: 768px) {
-        .main-div{
-            width: 80%;
-            background-color: red;
-        }
+.work-div{
+    width: 100%;
+    box-shadow: 0 5px 5px 0;
+}
+
+.work-div h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.work1{
+    padding-top: 15px;
+}
+/* Hero2 ends here */
     }

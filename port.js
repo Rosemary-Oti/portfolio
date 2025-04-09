@@ -1,12 +1,27 @@
 const addContact = document.querySelector('#contact');
-const footerSection = document.querySelector('#footer');
 const emailSection = document.querySelector('#email');
 const whatsappSection = document.querySelector('#whatsapp') ;
 const twiterSection = document.querySelector('#twiter');
 const githubSection = document.querySelector('#github');
+const footerSection = document.querySelector('#footer');
 const landingPage = document.querySelector('#landing');
 const residaPage = document.querySelector('#resida');
 const authPage = document.querySelector('#auth');
+
+
+const menuIcon = document.querySelector('.menu-icon');
+const nav = document.querySelector('.nav');
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.close');
+
+menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    hamburger.classList.toggle('hide');
+    closeIcon.classList.toggle('hide');
+})
+
+
+
 
 addContact.addEventListener('click', () => {
     footerSection.scrollIntoView({ behavior: 'smooth'});
@@ -47,3 +62,4 @@ authPage.addEventListener('click', () => {
     const authURL = 'https://auth-app-haho.vercel.app/';
     window.open(authURL, '_blank');
 })
+

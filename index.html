@@ -10,28 +10,37 @@
   <body>
     <div class="main-div">
       <header>
-        <nav>
-          <div class="nav-div">
-            <img class="logo" src="logo.jpeg" />
-            <div class="lists">
-              <h4><a href="#about">ABOUT</a></h4>
-              <h4><a href="#projects">PROJECTS</a></h4>
-              <h4 id="contact" class="contact">CONTACT</h4>
-            </div>
-          </div>
+        <div class="myLogo-div">
+          <img class="logo" src="/assets/icons/myLogo.png" />
+         </div>
+          <nav class="nav">
+            <ul class="lists">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li id="contact" class="contact"><a href="#projects"></a>CONTACT</li>
+            </ul>
         </nav>
+        <div class="menu-icon">
+          <span class="hamburger">&#9776;</span>
+          <span class="close">&times;</span>
+        </div>
       </header>
 
+      <!-- hero 1 -->
       <div class="hero1">
+
+        <!-- Left side -->
         <div class="img-div">
           <div class="main-port">
-            <img class="port-div" src="portpix.jpg" />
+            <img class="port-div" src="/assets/images/portpix.jpg" />
           </div>
           <div id="about" class="about-div">
             <h2>I'm Rosemary Oti</h2>
-            <p>Frontend web developer based in, Enugu Nigeria.</p>
+            <p>A skilled and passionate frontend web developer based in, Enugu Nigeria.</p>
           </div>
         </div>
+
+        <!-- Right side -->
         <div id="projects" class="project-div">
           <div class="pro">
             <h3>Projects</h3>
@@ -76,14 +85,14 @@
 
             <div class="auth-div">
               <div>
-                <img class="react-div" src="R-act.jpg" />
+                <img class="react-div" src="/assets/icons/R-act.jpg" />
               </div>
               <h4 class="auth" id="auth">Authentication App</h4>
             </div>
 
             <div class="landing-div">
               <div>
-                <img class="react-div" src="R-act.jpg" />
+                <img class="react-div" src="/assets/icons/R-act.jpg" />
               </div>
               <h4 class="landing" id="landing">Landing Page</h4>
             </div>
@@ -94,7 +103,7 @@
             <div class="cert1">
               <a
                 href="https://drive.google.com/file/d/1-t9IxNixsy9yT53cqdJGBBTioHqDS4dT/view?usp=drive_link"
-                >SoftwareDevelopment(Frontend)
+                >Software Development (Frontend)
               </a>
             </div>
             <div class="cert2">
@@ -123,18 +132,14 @@
 
       <!-- WORK EXPERIENCES -->
       <div class="hero2">
-        <div class="img-div">
-          <div class="main-port">
-            <img class="port-div" src="portpix.jpg" />
-          </div>
-          <div id="about" class="about-div">
-            <h2>I'm Rosemary Oti</h2>
-            <p>Frontend web developer based in, Enugu Nigeria</p>
-          </div>
+          <div class="subHeroPhoto">
+            <img class="sub-div" src="/assets/images/sub-heroPhoto.jpg" />
         </div>
 
         <div class="work-div">
           <h3>Work experiences</h3>
+
+        <div class="work1">  
           <p>
             Junior Frontend Developer (Freelancer) <br />
             Self-Employed <br />
@@ -150,7 +155,10 @@
               design techniques.
             </li>
           </ul>
+        </div>
 
+          
+          <div class="work1">
           <p>
             Frontend Development Trainee <br />
             ALX Africa Remote: 2023
@@ -165,7 +173,11 @@
               real-world development environments.
             </li>
           </ul>
+        </div>
 
+
+          
+          <div class="work1">
           <p>
             Frontend Developer (Intern) <br />
             PORA ACADEMY, Remote: 2024
@@ -177,7 +189,10 @@
             </li>
             <li>Completed a user-friendy authentication app</li>
           </ul>
+        </div>
 
+          
+          <div class="work1">
           <p>
             Frontend Developer (Intern) <br />
             FODCON : 2024 till date
@@ -194,17 +209,18 @@
             </li>
           </ul>
         </div>
+        </div>
 
         <!-- PROJECTS -->
       </div>
       <div class="hero3">
-        <img class="p1" src="p1.jpg" />
-        <img class="p2" src="p2.jpg" />
-        <img class="p3" src="p3.jpg" />
-        <img class="p4" src="p4.jpg" />
-        <img class="p5" src="p5.jpg" />
-        <img class="p6" src="p6.jpg" />
-        <img class="p7" src="p7.jpg" />
+        <img class="p1" src="/assets/images/p1.jpg" />
+        <img class="p2" src="/assets/images/p2.jpg" />
+        <img class="p3" src="/assets/images/p3.jpg" />
+        <img class="p4" src="/assets/images/p4.jpg" />
+        <img class="p5" src="/assets/images/p5.jpg" />
+        <img class="p6" src="/assets/images/p6.jpg" />
+        <img class="p7" src="/assets/images/p7.jpg" />
       </div>
 
       <!-- FOOTER SECTION -->
@@ -248,21 +264,21 @@
               <img
                 class="email"
                 id="email"
-                src="email logo.jpg"
+                src="/assets/icons/email logo.jpg"
                 alt="Email Logo"
               />
             </div>
 
             <div class="whatsapp-div">
-              <img class="whatsapp" id="whatsapp" src="whatsapp logo.jpg" />
+              <img class="whatsapp" id="whatsapp" src="/assets/icons/whatsapp logo.jpg" />
             </div>
 
             <div class="twiter-div">
-              <img class="twiter" id="twiter" src="twiter logo.jpg" />
+              <img class="twiter" id="twiter" src="/assets/icons/twiter logo.jpg" />
             </div>
 
             <div class="github-div">
-              <img class="github" id="github" src="github logo.jpg" />
+              <img class="github" id="github" src="/assets/icons/github logo.jpg" />
             </div>
           </div>
         </div>
