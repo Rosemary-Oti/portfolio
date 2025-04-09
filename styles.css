@@ -348,7 +348,7 @@ header{
     /* hero1 starts here */
     .hero1{
         flex-direction: column;
-        padding: 0 5em;
+        padding: 0 2em;
         
     }
 
@@ -382,6 +382,10 @@ header{
 
     /* Hero2 starts here */
 
+    .hero2{
+        padding: 0 2em;
+    }
+
 .work-div{
     width: 100%;
     box-shadow: 0 5px 5px 0;
@@ -398,4 +402,8 @@ header{
     padding-top: 15px;
 }
 /* Hero2 ends here */
+
+.footer-div{
+    border-radius: 0;
+}
     }
