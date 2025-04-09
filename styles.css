@@ -219,7 +219,7 @@ header{
     align-items: center;
     justify-content: space-around;
     height: 100px;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
     border-radius: 50px;
     border: solid #000;
 }
@@ -405,5 +405,30 @@ header{
 
 .footer-div{
     border-radius: 0;
+
+}
+
+.footer-main{
+    margin-bottom: 0 ;
+    padding-bottom: 0;
+}
+
+.footer-main div h2{
+    font-size: small;
+}
+
+.email, .twiter, .github, .whatsapp {
+    width: 12px;
+    height: 14px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.copyline{
+    height: 1px;
+}
+
+.copy p{
+    font-size: small;
 }
     }
