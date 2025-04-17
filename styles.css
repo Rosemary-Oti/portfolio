@@ -272,6 +272,7 @@ header{
 
        .menu-icon{
         display: block;
+       
     }
 
     .hamburger{
@@ -280,6 +281,10 @@ header{
 
     .close{
         display: none;
+    }
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrollbars from overflowing*/
     }
 
     .nav{
