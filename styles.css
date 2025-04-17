@@ -307,7 +307,6 @@ header{
     justify-content: center;
     gap: 35px;
     padding: 0 60px;
-    
 }
 
 .lists li a{
@@ -348,6 +347,7 @@ header{
 
     header{
         border-radius: 0;
+        padding: 0 2em;
     }
 
     /* hero1 starts here */
